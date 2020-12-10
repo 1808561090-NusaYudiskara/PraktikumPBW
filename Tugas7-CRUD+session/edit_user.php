@@ -50,7 +50,7 @@ if($_POST){
 	if($pass==''){
 		$password=$data['password'];
 	}else{
-		$password=md5($pass);
+		$password=$pass;
 	}
 	
 	$insert=mysql_query("UPDATE user SET username='$username',password='$password',nama='$nama',level='$level' WHERE username='$id'");
