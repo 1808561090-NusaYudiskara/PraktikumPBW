@@ -14,5 +14,6 @@ if($sesi=='user'){
 	$koneksi = mysqli_connect ( "localhost" , "root" , "" , "tugas_7" );
 	$query=mysqli_query($koneksi,"DELETE FROM user WHERE username='$id'");
 	
-	if($query){header('location:sadmin.php');}	
+	if($query){header('location:sadmin.php');}
+}
 ?>
